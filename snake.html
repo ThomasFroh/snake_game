@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Snake</title>
+  <script src="./snake.js"></script>
+</head>
+
+<body>
+  <h1>Snake</h1>
+  <div class="buttons">
+    <input id="start" onclick="game()" type="button" name="start" value="Start">
+    <input id="turnl" onclick="turnleft()" type="button" name="turnl" value="Turn left">
+    <input id="turnr" onclick="turnright()" type="button" name="turnr" value="Turn right">
+  </div>
+
+  <div class="canvas">
+    <canvas id="myCanvas" width="750" height="750" style="border:1px solid #000000;"></canvas>
+  </div>
+
+  <p id="lost"></p>
+
+</body>
+
+</html>
