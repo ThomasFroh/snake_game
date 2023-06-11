@@ -48,7 +48,6 @@ function draws() {
         if (x <= 0 || x >= 750 || y <= 0 || y >= 750) {
             endGame(timer);
         }
-        console.log(x, y);
         for (let i = 0; i < snake.length - 1; i++) {
             if (x == snake[i].xPos && y == snake[i].yPos) {
                 endGame(timer);
@@ -62,7 +61,10 @@ function drawSnake() {
     ctx.strokeStyle = '#FF0000';
     ctx.lineWidth = 5;
 
+    ctx.beginPath();
+
     ctx.moveTo(x, y);
+    console.log(x, y);
 
     switch (dir) {
         case 1:
