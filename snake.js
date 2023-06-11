@@ -1,5 +1,6 @@
 var x = 1;
 var y = 250;
+//
 var dir = 4;
 var gameRunning = false;
 var gameOver = false;
@@ -114,15 +115,19 @@ function turnleft() {
     switch (dir) {
         case 1:
         dir = 4;
+        y--;
         break;
         case 2:
         dir = 3;
+        y++;
         break;
         case 3:
         dir = 1;
+        x++;
         break;
         case 4:
         dir = 2;
+        x--;
         break;
         default:
 
@@ -130,20 +135,24 @@ function turnleft() {
 }
   
 function turnright() {
-switch (dir) {
-    case 1:
-    dir = 3;
-    break;
-    case 2:
-    dir = 4;
-    break;
-    case 3:
-    dir = 2;
-    break;
-    case 4:
-    dir = 1;
-    break;
-    default:
+    switch (dir) {
+        case 1:
+        dir = 3;
+        y--;
+        break;
+        case 2:
+        dir = 4;
+        y++;
+        break;
+        case 3:
+        dir = 2;
+        x++;
+        break;
+        case 4:
+        dir = 1;
+        x--;
+        break;
+        default:
 
-}
+    }
 }
